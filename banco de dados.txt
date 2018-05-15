@@ -1,0 +1,15 @@
+CREATE DATABASE novo CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+use novo;
+
+CREATE TABLE diario(
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+titulo VARCHAR(300),
+descricao VARCHAR(3000) NOT NULL,
+data_inicial date,
+data_final date,
+hora_inicial time,
+hora_final time,
+situacao varchar(300),
+tecnico varchar(300)
+) engine InnoDB;
